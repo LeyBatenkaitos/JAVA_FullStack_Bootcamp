@@ -1,0 +1,147 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 850px;
+  height: auto;
+  margin: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContext {
+  display: flex;
+  flex-direction: column;
+}
+.redesSociales {
+  display: flex;
+}
+.redesSociales p {
+  font-size: 14px;
+  color: gray;
+}
+.redesSociales figure {
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px;
+}
+.menuBusqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.menuBusqueda input {
+  border: none;
+  border-bottom: 3px solid lightgray;
+}
+
+.menuBusqueda img {
+  float: right;
+}
+
+#banner1 {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  margin: 0;
+}
+#banner1 img {
+  padding: 15px;
+  width: 1000px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0a132d;
+}
+#navbar img {
+  width: 30px;
+  height: 30px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+#mainMenuSector {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("/img/mainMenuImg.png");
+  width: auto;
+  height: 300px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  color: white;
+}
+#mainMenuSector h2 {
+  font-weight: 400;
+}
+#mainMenuSector input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  width: 500px;
+}
+
+#mainMenuSector input::placeholder {
+  font-style: italic;
+  color: lightgray;
+}
+#mainMenuSector h4 {
+  font-weight: 400;
+}
+
+.inputMain {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  padding-top: 0;
+}
+
+#banner2 {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  margin: 0;
+}
+#banner2 img {
+  padding: 15px;
+  width: 1000px;
+}
+
+#bottomSection {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border-top: 2px solid rgb(169, 169, 169);
+}
+#bottomSection h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.innerArticle {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+.innerArticle section {
+  padding: 10px;
+}
+.innerArticle h4 {
+  color: red;
+}
+.innerArticle h5 {
+  color: cornflowerblue;
+}
