@@ -89,5 +89,28 @@
         </article>
       </article>
     </main>
+    <script>
+         function deleteLanguage(id) {
+          Swal.fire({
+              title: "Delete Language" + id,
+              text: "¿Are you Sure?",
+              icon: "question",
+              showCancelButton: true,
+              confirmButtonText: "Yes, Delete it!!!"
+          }).then(res => {
+              if(res.value) {
+                  const url = "http://localhost:8080/languages/"+id;
+                  console.log(url);
+                  $.ajax(url, {
+                      method: "delete"
+                  }).then(res => {
+                      if(res) {
+                          window.location = "http://localhost:8080/languages";
+                      }
+                  }).catch(e => console.log(e));
+              }
+          });
+      }
+    </script>
   </body>
 </html>
